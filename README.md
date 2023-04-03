@@ -3,29 +3,33 @@
 npm i -g typescript
 tsc -- version => gives you the current TypeScript version
 
-### Configure the TypeScript Compiler : 
+### Configure the TypeScript Compiler :
 
-tsc --init   => Created a tsconfig.json with : ... 
- - "target": "ES2016", => Safest Version 
- - "rootDir": "./src", => Create a src Directory and make it the root folder 
- - "outDir": "./dist", => When we compilt the code the JavaScript will be stored in dist or distributable folder
- - "removeComments": true, => The Compiled Javascript will have no Comments for shorter and cleaner purposes
- - "noEmitOnError": true, => When Error code will not be compiled to JavaScript 
+tsc --init => Created a tsconfig.json with : ...
 
+- "target": "ES2016", => Safest Version
+- "rootDir": "./src", => Create a src Directory and make it the root folder
+- "outDir": "./dist", => When we compile the code the JavaScript will be stored in dist / distributable folder
+- "removeComments": true, => The Compiled Javascript will have no Comments for shorter and cleaner purposes
+- "noEmitOnError": true, => When Error code will not be compiled to JavaScript
+- "noUnusedLocals": true, => Enable error reporting when local variables aren't read.
+- "noUnusedParameters": true, => Raise an error when a function parameter isn't read.
+- "noImplicitReturns": true, => Enable error reporting for codepaths that do not explicitly return in a function.
 
-### Compiling : 
+### Compiling :
 
-- Use tsc filename inside your terminal =>  example : tsc app.ts
-- After Configuration you should use only tsc for compilation 
+- Use tsc filename inside your terminal => example : tsc app.ts
+- After Configuration you should use only tsc for compilation
 
+### Debugging :
 
-### Debugging : 
-"sourceMap": true, => creates a map file that specifies how the typescript maps our javascript code   // it is for machines 
- "preLaunchTask" : "tsc: build - tsconfig.json", 
+"sourceMap": true, => creates a map file that specifies how the typescript maps our javascript code // it is for machines
+"preLaunchTask" : "tsc: build - tsconfig.json",
 
 ### About :
+
 - Dynamically typed languages like JavaScript Python the type of variables is dynamic and can change between numbers and strings
-- Typescript Compiler uses ES5 
+- Typescript Compiler uses ES5
 
 ### TypeScript Benefits :
 
@@ -39,4 +43,6 @@ tsc --init   => Created a tsconfig.json with : ...
 - Transpilation => it is always compilint to .js
 - Simple applications you have to use javascript because Typescript might get on your way and it is made for larger projects
 
+## Types in JavaScript : number , string , boolean , null , undefined , object
 
+## Types in TypeScript : any , unknown , never , enum , tuple
