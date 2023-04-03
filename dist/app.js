@@ -1,7 +1,8 @@
 "use strict";
-let age = 20;
-if (age < 50) {
-    age += 20;
-}
-console.log(age);
+let sales = 2323232323;
+let variable;
+let numbers = [1, 2, 3];
+let user = [10, "arber"];
+let mySize = 2;
+console.log(mySize);
 //# sourceMappingURL=app.js.map
