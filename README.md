@@ -30,7 +30,7 @@ tsc --init => Created a tsconfig.json with : ...
 ### About :
 - Since TypeScript is a superset of JavaScript, it includes all the built-in types in JavaScript (eg number,string, boolean, object, etc) as well as additional types (eg any, unknown, never, enum, tuple, etc).
 - Dynamically typed languages like JavaScript Python the type of variables is dynamic and can change between numbers and strings
-- Tuples are fixed-length arrays where each element has a specific type. We often use them for representing two or three related values. •Enums represent a list of related constants. 
+- Tuples are fixed-length arrays where each element has a specific type. We often use them for representing two or three related values.
 - In TypeScript, we set the type of our variables by annotating them
 - Enums represent a list of related constants.
 
