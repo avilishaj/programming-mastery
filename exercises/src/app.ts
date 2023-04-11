@@ -26,16 +26,14 @@ prices[0] = 150;
 
 // Functions -- Find the Error
 function myFunction(a: number, b: number): number {
-  // so we fix the problem by :
+  // So we fix the problem by :
   return a + b;
 }
 // -- Solution : myFunction is expected to return a number but nothing is returned
 
-
 // Type Aliases
 // DRY method stands for Dont Repeat Yourself
 
-// Creating the alias
 type Employee = {
   id: number;
   name: string;
@@ -47,3 +45,15 @@ let newEmployee: Employee = {
   name: "arber",
   age: 19,
 };
+
+// Union Types
+
+function kgsToLbs(weight: number | string): number {
+  if (typeof weight === "number") {
+    return weight * 2.2;
+  } else {
+    return parseInt(weight) * 2.2;
+  }
+}
+console.log(kgsToLbs('10'))
+console.log(kgsToLbs(10))
