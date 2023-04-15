@@ -3,7 +3,7 @@
 let sales: number = 123_456_789; // Write numbers with underscore
 let numbers: number[] = [1, 2, 3]; // Annotate an array to hold numbers
 //numbers.forEach(n=>n.{every method applied to numbers})
-numbers.forEach((n) => n.toFixed); // To fixed rounds the number to the closest decimal 
+numbers.forEach((n) => n.toFixed); // To fixed rounds the number to the closest decimal
 
 // Enums
 enum Size {
@@ -27,3 +27,15 @@ function calculateTax(income: number, taxYear = 2022): number {
 }
 // The function can now take only one parameter because taxYear is by default declared else taxYear gets overwrited by user choice
 calculateTax(10_000, 2022); // if extra arguments => Error : Expected 2 arguments
+
+// Objects
+let person: {
+  id: number;
+  firstName: string;
+  lastName: string;
+  birthday?: Date;
+} = {
+  id: 199,
+  firstName: "john",
+  lastName: "doe",
+};
