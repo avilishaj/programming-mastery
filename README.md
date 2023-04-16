@@ -44,6 +44,6 @@
 - Transpilation => it is always compiling to .js
 - Simple applications you have to use javascript because Typescript might get on your way and it is made for larger projects
 
-## Types in JavaScript : number , string , boolean , null , undefined , object
+### Types in JavaScript : number , string , boolean , null , undefined , object
 
-## Types in TypeScript : any , unknown , never , enum , tuple
+### Types in TypeScript : any , unknown , never , enum , tuple
