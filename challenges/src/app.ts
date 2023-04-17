@@ -1,1 +1,41 @@
-console.log('hello machines')
+// Rock Paper Scissors
+let userName: string = "john";
+let choices = ["rock", "paper", "scissors"];
+let userInput = 0;
+let randomNumber = Math.floor(Math.random() * 3);
+let userChoice = choices[userInput];
+let computerChoice = choices[randomNumber];
+// console.log(choices[userChoice]);
+// console.log(computerChoice);
+
+// building the logics
+
+if (computerChoice === "rock") {
+  if (userChoice === "rock") {
+    console.log(`${userName}'s choice is the same as the computer's !`);
+  } else if (userChoice === "paper") {
+    console.log(`${userName} won :) `);
+  } else {
+    console.log(`${userName} lost :(`);
+  }
+}
+
+if (computerChoice === "paper") {
+  if (userChoice === "paper") {
+    console.log(`${userName}'s choice is the same as the computer's !`);
+  } else if (userChoice === "scissors") {
+    console.log(`${userName} won :) `);
+  } else {
+    console.log(`${userName} lost :(`);
+  }
+}
+
+if (computerChoice === "scissors") {
+  if (userChoice === "scissors") {
+    console.log(`${userName}'s choice is the same as the computer's !`);
+  } else if (userChoice === "rock") {
+    console.log(`${userName} won :) `);
+  } else {
+    console.log(`${userName} lost :(`);
+  }
+}
