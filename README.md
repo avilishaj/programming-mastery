@@ -8,6 +8,7 @@
 - Create a config file : tsc --init
 
 ### Toggle true in configuration file :
+
 - "target": "ES2016", => Safest Version
 - "rootDir": "./src", => Create a src Directory and make it the root folder
 - "outDir": "./dist", => When we compile the code the JavaScript will be stored in dist / distributable folder
@@ -16,18 +17,21 @@
 - "noUnusedLocals": true, => Enable error reporting when local variables aren't read.
 - "noUnusedParameters": true, => Raise an error when a function parameter isn't read.
 - "noImplicitReturns": true, => Enable error reporting for codepaths that do not explicitly return in a function.
+- "allowUnreachableCode": false, => Disable error reporting for unreachable code.
+- "strictNullChecks": true, => When type checking, take into account 'null' and 'undefined'.
 
 ### Compiling :
 
 - Before Configuration : tsc app.ts
-- After Configuration : tsc 
+- After Configuration : tsc
 
 ### Debugging :
 
-- Create a sourceMap by toggling the sourceMap option true in the configuration file 
+- Create a sourceMap by toggling the sourceMap option true in the configuration file
 - Use : "preLaunchTask" : "tsc: build - tsconfig.json",
 
 ### About :
+
 - Since TypeScript is a superset of JavaScript, it includes all the built-in types in JavaScript (eg number,string, boolean, object, etc) as well as additional types (eg any, unknown, never, enum, tuple, etc).
 - Dynamically typed languages like JavaScript Python the type of variables is dynamic and can change between numbers and strings
 - In TypeScript, we set the type of our variables by annotating them
