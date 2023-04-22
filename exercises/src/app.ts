@@ -156,11 +156,12 @@ let ride = {
 // Sometimes we know more about the type of a variable than the TypeScript compiler.
 //  In those situations, we can use the as keyword to specify a different type than the one inferred by the compiler.
 // This is called type assertion.
-let phoneInput = document.querySelector("input") as HTMLInputElement;
+/*let phoneInput = document.querySelector("input") as HTMLInputElement;
 phoneInput.value;
 // --- or ---
 let altPhoneInput = <HTMLInputElement>document.querySelector("input");
 altPhoneInput.value;
+*/
 
 // ====================================================== //
 
@@ -233,7 +234,6 @@ type Pet = Bird | Fish;
 // ====================================================== //
 
 // Define a type for representing the days of week. Valid values are “Monday”, “Tuesday”, etc.
-
 type Week =
   | "Monday"
   | "Tuesday"
@@ -243,5 +243,23 @@ type Week =
   | "Saturday"
   | "Sunday";
 
-  const weekday:Week = 'Monday'
+const weekday: Week = "Monday";
 // ====================================================== //
+// What is the problem in this piece of code ? => Value is Type of unknown and not string
+let value: unknown = "a";
+if (typeof value === "string") value.toUpperCase();
+
+// ====================================================== //
+// check if this objecs has a firstname
+let somebody: {
+  readonly id: number;
+  firstName: string;
+  lastName: string;
+  summary?: any;
+} = {
+  id: 10,
+  firstName: "arber",
+  lastName: "lisaj",
+};
+// let user = getUser();console.log(user && user.address?user.address.street: undefined);
+console.log(somebody?.firstName);

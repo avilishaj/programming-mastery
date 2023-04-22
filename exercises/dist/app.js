@@ -60,10 +60,6 @@ let speed = null;
 let ride = {
     speed: speed !== null && speed !== void 0 ? speed : 30,
 };
-let phoneInput = document.querySelector("input");
-phoneInput.value;
-let altPhoneInput = document.querySelector("input");
-altPhoneInput.value;
 function render(document) {
     if (typeof document === "string") {
         document.toUpperCase();
@@ -79,4 +75,13 @@ function processEvents() {
     }
 }
 console.log("hello world ");
-const weekday = 'Monday';
+const weekday = "Monday";
+let value = "a";
+if (typeof value === "string")
+    value.toUpperCase();
+let somebody = {
+    id: 10,
+    firstName: "arber",
+    lastName: "lisaj",
+};
+console.log(somebody === null || somebody === void 0 ? void 0 : somebody.firstName);
