@@ -29,13 +29,16 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(10_000, 2022); // if extra arguments => Error : Expected 2 arguments
 
 // Objects
-let person: {
-  id: number;
+type Person = {
+  readonly id: number;
   firstName: string;
   lastName: string;
   birthday?: Date;
-} = {
-  id: 199,
-  firstName: "john",
-  lastName: "doe",
+};
+
+let firstPerson: Person = {
+  id: 1,
+  firstName: "arber",
+  lastName : "lisaj",
+  // birthday is optional 
 };

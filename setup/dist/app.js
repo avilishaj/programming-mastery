@@ -16,9 +16,9 @@ function calculateTax(income, taxYear = 2022) {
     return income * 1.3;
 }
 calculateTax(10000, 2022);
-let person = {
-    id: 199,
-    firstName: "john",
-    lastName: "doe",
+let firstPerson = {
+    id: 1,
+    firstName: "arber",
+    lastName: "lisaj",
 };
 //# sourceMappingURL=app.js.map
