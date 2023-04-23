@@ -8,7 +8,7 @@ let g = []; // any
 
 // ====================================================== //
 
-// Object -- Find the Error
+// Object -- Find the Error => " The Error is : releaseYear is not given when initialized"
 let string: {
   title: string;
   releaseYear: number;
@@ -17,7 +17,6 @@ let string: {
   // We add the releaseYear
   releaseYear: 1999,
 };
-(" The Error is : releaseYear is not given when initialized");
 // ====================================================== //
 
 // Array -- Find the Error
@@ -263,6 +262,3 @@ let somebody: {
 };
 // let user = getUser();console.log(user && user.address?user.address.street: undefined);
 console.log(somebody?.firstName);
-
-// ====================================================== //
-console.log(bigdig)

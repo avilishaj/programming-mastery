@@ -19,6 +19,7 @@
 - "noImplicitReturns": true, => Enable error reporting for codepaths that do not explicitly return in a function.
 - "allowUnreachableCode": false, => Disable error reporting for unreachable code.
 - "strictNullChecks": true, => When type checking, take into account 'null' and 'undefined'.
+- "noImplicitOverride": true, => Ensure overriding members in derived classes are marked with an override modifier.
 
 ### Compiling :
 
