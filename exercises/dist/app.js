@@ -85,3 +85,4 @@ let somebody = {
     lastName: "lisaj",
 };
 console.log(somebody === null || somebody === void 0 ? void 0 : somebody.firstName);
+console.log(bigdig);

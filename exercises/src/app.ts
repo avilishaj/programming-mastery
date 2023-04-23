@@ -263,3 +263,6 @@ let somebody: {
 };
 // let user = getUser();console.log(user && user.address?user.address.street: undefined);
 console.log(somebody?.firstName);
+
+// ====================================================== //
+console.log(bigdig)
