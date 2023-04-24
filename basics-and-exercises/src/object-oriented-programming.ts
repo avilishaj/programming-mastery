@@ -7,7 +7,6 @@
 */
 // Creating Classes  -- an object factory
 // Access Control Keywords || Access modifiers  = private , public , protected
-
 class Account {
   constructor(
     // parameter properties
@@ -28,11 +27,10 @@ class Account {
     this._balance = value;
   }
 }
-
 let account = new Account(1, "arber", 0);
 // account.   with the blue icon are the properties and with the purple icons are the methods
 account.deposit(100);
-console.log(account);
+// console.log(account);
 account.balance = 22;
 console.log(account.balance);
 // console.log(account instanceof Account); true
@@ -43,10 +41,10 @@ console.log(account.balance);
 
 class CreatePerson {
   constructor(
-   public  readonly id: number,
-   public firstName: string,
-   public lastName: string,
-   public nickName?: string
+    public readonly id: number,
+    public firstName: string,
+    public lastName: string,
+    public nickName?: string
   ) {}
 }
 
@@ -68,14 +66,14 @@ seats["B2"] = "Joan";
 seats["B3"] = "Alexa";
 seats["C1"] = "Angel";
 seats.C2 = "Jonathan";
-console.log(seats);
-console.log(seats.A1);
+// console.log(seats);
+// console.log(seats.A1);
 
 // ====================================================== //
 class KeepCount {
   private static _count = 0;
   // Static Members
-  //  static property is a property that belongs to a class and not an object
+  //  static property is a property that belongs to a class and not an object {it cannot be modified outside of the class}
   // we have to use acces modifiers to not cause bugs inside of the ride class
   start() {
     KeepCount._count = 0;

@@ -22,15 +22,14 @@ class Account {
 }
 let account = new Account(1, "arber", 0);
 account.deposit(100);
-console.log(account);
 account.balance = 22;
 console.log(account.balance);
 class CreatePerson {
     constructor(id, firstName, lastName, nickName) {
-        (this.id = id),
-            (this.firstName = firstName),
-            (this.lastName = lastName),
-            (this.nickName = nickName);
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nickName = nickName;
     }
 }
 let anotherPerson = new CreatePerson(10, "arber", "lisaj");
@@ -45,8 +44,16 @@ seats["B2"] = "Joan";
 seats["B3"] = "Alexa";
 seats["C1"] = "Angel";
 seats.C2 = "Jonathan";
-console.log(seats);
-console.log(seats.A1);
+let students = ["john", "kim", "jong", "jonathan", "beth", "katy", "jenifer"];
+class arangeStudents {
+}
+let studentSeats = new arangeStudents();
+let studentRow = "A";
+for (let student in students) {
+    studentRow += student;
+    studentSeats.studentRow = students[student];
+    console.log(studentSeats);
+}
 class KeepCount {
     start() {
         KeepCount._count = 0;
@@ -103,5 +110,30 @@ printNames([
 function printNames(people) {
     for (let person of people) {
         console.log(person.fullName);
+    }
+}
+class Shape {
+    constructor(color) {
+        this.color = color;
+    }
+}
+class Circle extends Shape {
+    constructor(radius, color) {
+        super(color);
+        this.radius = radius;
+    }
+    render() {
+        console.log("rendering a circle");
+    }
+}
+class GoogleCalendar {
+    constructor(name) {
+        this.name = name;
+    }
+    addEvent() {
+        throw new Error("Method not implemented.");
+    }
+    removeEvent() {
+        throw new Error("Method not implemented.");
     }
 }
