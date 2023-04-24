@@ -42,21 +42,12 @@ console.log(account.balance);
 // Read-Only and Optional Properties
 
 class CreatePerson {
-  readonly id: number;
-  firstName: string;
-  lastName: string;
-  nickName?: string;
   constructor(
-    id: number,
-    firstName: string,
-    lastName: string,
-    nickName?: string
-  ) {
-    (this.id = id),
-      (this.firstName = firstName),
-      (this.lastName = lastName),
-      (this.nickName = nickName);
-  }
+   public  readonly id: number,
+   public firstName: string,
+   public lastName: string,
+   public nickName?: string
+  ) {}
 }
 
 let anotherPerson = new CreatePerson(10, "arber", "lisaj");
@@ -194,7 +185,6 @@ class GoogleCalendar implements Calendar {
   }
 }
 
-
 // ====================================================== //
 // Interfaces vs Types
 /* In TypeScript Interfaces and type aliases can be used interchargebly 
@@ -220,5 +210,3 @@ Both can be used to describe the shape of an object
   - class MyCalendar extends MyInterface {}
   - class MyCalendar extends MyType {}
   */
-
-
