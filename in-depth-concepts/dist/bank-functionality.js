@@ -13,6 +13,7 @@ class Account {
     Name : ${this.userName} \n
     Last Name : ${this.lastName} \n
     Balance: ${this._balance} ${currency}\n
+    currency : ${currency}
     `;
     }
     get balance() {
