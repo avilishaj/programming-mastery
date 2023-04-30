@@ -8,7 +8,7 @@
   - change the nickname 
 */
 let currency = "euro";
-class Account {
+class BankAccount {
   constructor(
     public readonly id: number,
     public userName: string,
@@ -52,7 +52,7 @@ class Account {
   }
 }
 
-const newAccount = new Account(1, "Arber", "Lisaj", 0, "the brogrammer");
+var newAccount = new BankAccount(1, "Arber", "Lisaj", 0, "the brogrammer");
 // deposit money
 newAccount.deposit(200);
 // check the balance
@@ -67,20 +67,20 @@ newAccount.setOrChangeNickname("the owner");
 newAccount.statement;
 
 // Creating a random account | At least 4 parameters
-const user456 = new Account(456, "Jane", "Doe", 0);
+var user456 = new BankAccount(456, "Jane", "Doe", 0);
 user456.setOrChangeNickname("thereisnonickname");
 console.log(user456?.nickname);
 
 // Creating 4 new accoutns
 
-const user123 = new Account(123, "User", "Programmes", 0),
-  user124 = new Account(124, "Jonathan", "Smith", 100_000_000),
-  user125 = new Account(125, "Ivy", "Lisaj", 1_000_000_000),
-  user131 = new Account(131, "Angel", "Di Maria", 167);
+var user123 = new BankAccount(123, "User", "Programmes", 0),
+  user124 = new BankAccount(124, "Jonathan", "Smith", 100_000_000),
+  user125 = new BankAccount(125, "Ivy", "Lisaj", 1_000_000_000),
+  user131 = new BankAccount(131, "Angel", "Di Maria", 167);
 
 // store all the users in an array
-const usersArray = [user123, user124, user125, user131];
-function allStatements(people: Account[]): void {
+var usersArray = [user123, user124, user125, user131];
+function allStatements(people: BankAccount[]): void {
   for (let person of people) {
     console.log(person.statement);
   }

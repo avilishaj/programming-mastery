@@ -44,16 +44,6 @@ seats["B2"] = "Joan";
 seats["B3"] = "Alexa";
 seats["C1"] = "Angel";
 seats.C2 = "Jonathan";
-let students = ["john", "kim", "jong", "jonathan", "beth", "katy", "jenifer"];
-class arangeStudents {
-}
-let studentSeats = new arangeStudents();
-let studentRow = "A";
-for (let student in students) {
-    studentRow += student;
-    studentSeats.studentRow = students[student];
-    console.log(studentSeats);
-}
 class KeepCount {
     start() {
         KeepCount._count = 0;

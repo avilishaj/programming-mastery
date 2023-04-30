@@ -59,9 +59,9 @@ class RegularPerson {
         console.log("*making loud noises :)");
     }
 }
-class Teacher extends RegularPerson {
+class Officer extends RegularPerson {
     talks() {
-        console.log("Teacher is talking");
+        console.log("Officer is talking");
     }
 }
 let myObj = { size: 10, label: "label assignement" };

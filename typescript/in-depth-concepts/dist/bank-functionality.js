@@ -1,6 +1,6 @@
 "use strict";
 let currency = "euro";
-class Account {
+class BankAccount {
     constructor(id, userName, lastName, _balance, nickname) {
         this.id = id;
         this.userName = userName;
@@ -13,7 +13,6 @@ class Account {
     Name : ${this.userName} \n
     Last Name : ${this.lastName} \n
     Balance: ${this._balance} ${currency}\n
-    currency : ${currency}
     `;
     }
     get balance() {
@@ -39,18 +38,18 @@ class Account {
         this.nickname = nickname;
     }
 }
-const newAccount = new Account(1, "Arber", "Lisaj", 0, "the brogrammer");
+var newAccount = new BankAccount(1, "Arber", "Lisaj", 0, "the brogrammer");
 newAccount.deposit(200);
 newAccount.balance;
 newAccount.withdraw(120);
 newAccount === null || newAccount === void 0 ? void 0 : newAccount.nickname;
 newAccount.setOrChangeNickname("the owner");
 newAccount.statement;
-const user456 = new Account(456, "Jane", "Doe", 0);
+var user456 = new BankAccount(456, "Jane", "Doe", 0);
 user456.setOrChangeNickname("thereisnonickname");
 console.log(user456 === null || user456 === void 0 ? void 0 : user456.nickname);
-const user123 = new Account(123, "User", "Programmes", 0), user124 = new Account(124, "Jonathan", "Smith", 100000000), user125 = new Account(125, "Ivy", "Lisaj", 1000000000), user131 = new Account(131, "Angel", "Di Maria", 167);
-const usersArray = [user123, user124, user125, user131];
+var user123 = new BankAccount(123, "User", "Programmes", 0), user124 = new BankAccount(124, "Jonathan", "Smith", 100000000), user125 = new BankAccount(125, "Ivy", "Lisaj", 1000000000), user131 = new BankAccount(131, "Angel", "Di Maria", 167);
+var usersArray = [user123, user124, user125, user131];
 function allStatements(people) {
     for (let person of people) {
         console.log(person.statement);

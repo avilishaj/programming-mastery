@@ -73,9 +73,9 @@ class RegularPerson {
   }
 }
 
-class Teacher extends RegularPerson {
+class Officer extends RegularPerson {
   override talks(): void {
-    console.log("Teacher is talking");
+    console.log("Officer is talking");
   }
 }
 
