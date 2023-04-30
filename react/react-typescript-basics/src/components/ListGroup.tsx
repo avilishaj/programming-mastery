@@ -5,9 +5,10 @@ import "./listgroup.css";
 interface Props {
   items: string[];
   heading: string;
+  onSelectItem: (item: string) => void;
 }
 // destructuring the prop
-function ListGroup({ items, heading }: Props) {
+function ListGroup({ items, heading, onSelectItem }: Props) {
   // let selectedIndex = -1;
   // Hook -- State Hook
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -29,6 +30,7 @@ function ListGroup({ items, heading }: Props) {
             // when we click on an item it adds the state
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
             }}
           >
             {item}
