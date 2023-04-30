@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+$dark-clr: #333;
+$white-clr: white;
+
+body {
+  font-family: sans-serif;
+}
+header {
+  width: 100%;
+  background-color: $dark-clr;
+  nav {
+    max-width: 1200px;
+    padding-block: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: $white-clr;
+    ul {
+      display: flex;
+      li {
+        font-size: 18px;
+        margin-left: 15px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
