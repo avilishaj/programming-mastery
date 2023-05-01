@@ -1,1 +1,5 @@
-## ahh programming gives me a mind orgasm 
+## Programming Mastery 
+### Languages 
+- JavaScript 
+- TypeScript 
+- Node.js
