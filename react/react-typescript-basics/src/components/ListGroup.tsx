@@ -8,15 +8,11 @@ interface Props {
   onSelectItem: (item: string) => void;
 }
 // destructuring the prop
-function ListGroup({ items, heading, onSelectItem }: Props) {
-  // let selectedIndex = -1;
-  // Hook -- State Hook
+function ListGroup({items , heading , onSelectItem}:Props ){
   const [selectedIndex, setSelectedIndex] = useState(-1);
-
   return (
     <>
       <h1>{heading}</h1>
-      {/* you can also use messages to render the parameter */}
       {/* {items.length === 0 ? <p>No items found!</p> : null} */}
       {items.length === 0 && <p>No items found!</p>}
       <ul>
@@ -26,7 +22,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
               selectedIndex === index ? "active default-class" : "default-class"
             }
             // onClick={selectedIndex = index}
-            key={item}
+            key={item} 
             // when we click on an item it adds the state
             onClick={() => {
               setSelectedIndex(index);

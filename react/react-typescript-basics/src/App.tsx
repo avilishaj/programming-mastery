@@ -3,9 +3,12 @@ function App() {
   const handleSelectItem = (item: string) => {
     console.log(item);
   };
-  let items = ["New York", "Tokyo", "Rome", "Berlin"];
+  let cities = ["New York", "Tokyo", "Rome", "Berlin"];
+  // let countries = ['Germany' , 'Italy' , 'Spain' , 'Albania']
   return (
-    <ListGroup items={items} heading="list" onSelectItem={handleSelectItem} />
+    <ListGroup items={cities} heading="list" onSelectItem={handleSelectItem} />
+    // <ListGroup items={countries} heading="Countries"/>
+
   );
 }
 
