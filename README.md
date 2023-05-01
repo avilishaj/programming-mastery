@@ -1,5 +1,6 @@
 ## Programming Mastery 
-### Languages 
+### Languages && Frameworks
 - JavaScript 
 - TypeScript 
+- React
 - Node.js
