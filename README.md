@@ -1,1 +1,6 @@
-## ahh programming gives me a mind orgasm 
+## Programming Mastery 
+### Languages && Frameworks
+- JavaScript 
+- TypeScript 
+- React
+- Node.js
