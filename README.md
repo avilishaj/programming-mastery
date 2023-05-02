@@ -1,5 +1,5 @@
 ## Languages and Frameworks
-### - TypeScript 
+### - TypeScript:
 - Configuration
 - Types 
 - Classes, Interfaces and Object-oriented Programming
@@ -9,3 +9,11 @@
 - Integration with JavaScript
 - React Typescript 
 - Node Typescript
+
+### - React:
+- Components 
+- Styling Components
+- Managing Component State
+- Building Forms 
+- Connecting with Backend
+- Intermediate App
