@@ -2,7 +2,6 @@
 ### - TypeScript 
 - Configuration
 - Types 
-- Optional Chaining 
 - Classes, Interfaces and Object-oriented Programming
 - Generics
 - Decorators
