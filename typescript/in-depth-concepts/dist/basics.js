@@ -1,5 +1,27 @@
 "use strict";
 var _a;
+let sales = 123456789;
+let numbers = [1, 2, 3];
+numbers.forEach((n) => n.toFixed);
+var Size;
+(function (Size) {
+    Size[Size["Small"] = 1] = "Small";
+    Size[Size["Medium"] = 2] = "Medium";
+    Size[Size["Large"] = 3] = "Large";
+})(Size || (Size = {}));
+let user = [10, "arber"];
+function calculateTax(income, taxYear = 2022) {
+    if (taxYear < 2022) {
+        return income * 1.2;
+    }
+    return income * 1.3;
+}
+calculateTax(10000, 2022);
+let firstPerson = {
+    id: 1,
+    firstName: "arber",
+    lastName: "lisaj",
+};
 let a = 100;
 let c = [true, false, true];
 let e = [3];
@@ -9,13 +31,12 @@ let string = {
     title: "song title",
     releaseYear: 1999,
 };
-(" The Error is : releaseYear is not given when initialized");
 let prices = [100, 200, 300];
 prices[0] = 400;
 function myFunction(a, b) {
     return a + b;
 }
-let newEmployee = {
+let newAlias = {
     id: 1,
     name: "arber",
     age: 19,
@@ -85,4 +106,4 @@ let somebody = {
     lastName: "lisaj",
 };
 console.log(somebody === null || somebody === void 0 ? void 0 : somebody.firstName);
-console.log(bigdig);
+//# sourceMappingURL=basics.js.map

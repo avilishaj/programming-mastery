@@ -29,7 +29,7 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(10_000, 2022); // if extra arguments => Error : Expected 2 arguments
 
 // Objects
-type Person = {
+type RandomObjeect = {
   readonly id: number;
   firstName: string;
   lastName: string;
@@ -86,13 +86,13 @@ function myFunction(a: number, b: number): number {
 // Type Aliases - Using a type alias we can create a new name (alias) for a type.
 // We often use type aliases to create custom types.
 // DRY method stands for Dont Repeat Yourself
-type Employee = {
+type Alias = {
   id: number;
   name: string;
   age: number;
 };
 
-let newEmployee: Employee = {
+let newAlias: Alias = {
   id: 1,
   name: "arber",
   age: 19,

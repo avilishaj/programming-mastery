@@ -7,6 +7,7 @@
   - get the nickname if it has one 
   - change the nickname 
 */
+
 let currency = "euro";
 class BankAccount {
   constructor(
