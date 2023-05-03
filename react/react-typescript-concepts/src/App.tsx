@@ -1,3 +1,4 @@
+import Alert from "./components/Alert";
 import ListComponent from "./components/ListComponent";
 function handleSelectedItem(item: string) {
   console.log(item);
@@ -17,6 +18,11 @@ function App() {
         heading="Select your travel destination"
         onSomething={handleSelectedItem}
       />
+      <hr />
+      <Alert>
+        <h1>This is just an alert</h1>
+        <p>Passing html elements as children</p>
+      </Alert>
     </>
   );
 }
