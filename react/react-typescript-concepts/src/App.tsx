@@ -20,8 +20,9 @@ function App() {
       />
       <hr />
       <Alert>
-        <h1>This is just an alert</h1>
+        <span>This is just an alert</span>
         <p>Passing html elements as children</p>
+        <button>trigger alert</button>
       </Alert>
     </>
   );

@@ -15,7 +15,7 @@ function ListComponent({ heading, item, onSomething }: ListComponentProps) {
     // using fragments to wrap multiple elements
     // a better practice are the empty fragments <> </>
     <Fragment>
-      <h1>{heading}</h1>
+      <h1 className="danger">{heading}</h1>
       {/* making a condition to check if the list is empty */}
       {item.length === 0 && <p>No items found!</p>}
       <ul>
